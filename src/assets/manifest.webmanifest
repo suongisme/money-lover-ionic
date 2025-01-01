@@ -5,7 +5,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
-  "start_url": "./",
+  "start_url": "/money-lover-ionic/tong-quan",
   "icons": [
     {
       "src": "icon/app-logo.png",
