@@ -27,7 +27,9 @@
               }
             ],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/global.scss", "src/theme/variables.scss"],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
