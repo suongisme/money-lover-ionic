@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import { Transaction, TransactionContainer } from '../../shared';
-import { IonText, IonIcon } from '@ionic/angular/standalone';
-import { RouterLink } from '@angular/router';
 import { DatePipe } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { IonText } from '@ionic/angular/standalone';
 import { CurrencyFormatterPipe } from '@money-lover/shared/pipe';
+import { Transaction, TransactionContainer } from '../../shared';
 
 @Component({
     selector: 'summary-transaction',
@@ -15,7 +15,6 @@ import { CurrencyFormatterPipe } from '@money-lover/shared/pipe';
 
         CurrencyFormatterPipe,
 
-        IonIcon,
         IonText,
         TransactionContainer,
     ],

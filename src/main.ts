@@ -29,4 +29,5 @@ bootstrapApplication(AppComponent, {
             registrationStrategy: 'registerWhenStable:30000',
         }),
     ],
-});
+})
+.catch(e => console.log(e))

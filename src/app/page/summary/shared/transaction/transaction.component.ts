@@ -1,13 +1,13 @@
 import { NgFor, NgTemplateOutlet } from '@angular/common';
 import { Component, Input, TemplateRef } from '@angular/core';
-import { IonIcon, IonItem, IonList, IonText } from '@ionic/angular/standalone';
+import { IonItem, IonList, IonText } from '@ionic/angular/standalone';
 import { CurrencyFormatterPipe } from '@money-lover/shared/pipe';
 
 @Component({
     selector: 'transaction-container',
     templateUrl: './transaction.component.html',
     standalone: true,
-    imports: [NgFor, NgTemplateOutlet, CurrencyFormatterPipe, IonList, IonItem, IonText, IonIcon ],
+    imports: [NgFor, NgTemplateOutlet, CurrencyFormatterPipe, IonList, IonItem, IonText ],
 })
 export class TransactionContainer {
     @Input({ required: true })

@@ -1,15 +1,11 @@
-import { addIcons } from 'ionicons';
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, ChildActivationEnd, Router } from '@angular/router';
 import {
-  IonHeader,
   IonIcon,
   IonLabel,
   IonTabBar,
   IonTabButton,
-  IonTabs,
-  IonTitle,
-  IonToolbar,
+  IonTabs
 } from '@ionic/angular/standalone';
 import { filter } from 'rxjs';
 
@@ -23,9 +19,6 @@ import { filter } from 'rxjs';
     IonTabButton,
     IonIcon,
     IonLabel,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
   ],
 })
 export class MainLayoutComponent implements OnInit {
