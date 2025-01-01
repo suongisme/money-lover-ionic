@@ -1,0 +1,38 @@
+<div>
+    <div class="d-flex justify-content-between align-items-center">
+        <ion-text>Báo cáo hàng tháng</ion-text>
+        <ion-text color="success">
+            <a class="text-success fw-bold" routerLink="/">Xem báo cáo</a>
+        </ion-text>
+    </div>
+    <ion-card >
+        <ion-card-content>
+            <ion-segment value="outcomming">
+                <ion-segment-button value="outcomming" contentId="outcomming">
+                    <ion-label>Tông chi</ion-label>
+                    <ion-text color="danger">0</ion-text>
+                </ion-segment-button>
+                <ion-segment-button value="incomming" contentId="incomming">
+                    <ion-label>Tổng thu</ion-label>
+                    <ion-text color="primary">0</ion-text>
+                </ion-segment-button>
+              </ion-segment>
+
+              <ion-segment-view>
+                <ion-segment-content id="outcomming">
+                    <!-- <ngx-charts-line-chart
+                        class="chart-container"
+                        [animations]="true"
+                        [legend]="true"
+                        [legendPosition]="'below'"
+                        [showXAxisLabel]="false"
+                        [showYAxisLabel]="false"
+                        [autoScale]="true"
+                    >
+                    </ngx-charts-line-chart> -->
+                </ion-segment-content>
+                <ion-segment-content id="incomming">Second</ion-segment-content>
+              </ion-segment-view>
+        </ion-card-content>
+      </ion-card>
+</div>

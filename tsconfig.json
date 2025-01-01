@@ -23,7 +23,8 @@
     "lib": ["es2018", "dom"],
     "useDefineForClassFields": false,
     "paths": {
-      "@money-lover/page/summary": ["./src/app/page/summary/index.ts"]
+      "@money-lover/page/summary": ["./src/app/page/summary/index.ts"],
+      "@money-lover/shared/pipe": ["src/app/shared/pipe/currency-formatter/index.ts"]
     }
   },
   "angularCompilerOptions": {

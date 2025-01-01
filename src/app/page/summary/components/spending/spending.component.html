@@ -1,0 +1,30 @@
+<div>
+    <div class="d-flex justify-content-between align-items-center">
+        <ion-text>Chi tiết nhiều nhất</ion-text>
+        <ion-text>
+            <a class="text-success fw-bold">Xem chi tiết</a>
+        </ion-text>
+    </div>
+
+    <ion-card>
+        <ion-card-content class="p-0">
+            <ion-segment value="week">
+                <ion-segment-button value="week" contentId="week">
+                    <ion-text>Tuần</ion-text>
+                </ion-segment-button>
+                <ion-segment-button value="month" contentId="month">
+                    <ion-text>Tháng</ion-text>
+                </ion-segment-button>
+            </ion-segment>
+
+            <ion-segment-view>
+                <ion-segment-content id="week">
+                    <transaction-container
+                        [transactions]="transactions"
+                    ></transaction-container>
+                </ion-segment-content>
+                <ion-segment-content id="month"> Tháng </ion-segment-content>
+            </ion-segment-view>
+        </ion-card-content>
+    </ion-card>
+</div>

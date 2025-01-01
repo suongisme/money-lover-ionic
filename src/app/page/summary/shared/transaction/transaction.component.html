@@ -1,0 +1,21 @@
+<ion-list>
+    <ion-item *ngFor="let transaction of transactions; trackBy:tracker" lines="none" [button]="true">
+        <div class="d-flex w-100 align-items-center">
+            <img [src]="'assets/icon/' + transaction.icon + '.png'" [alt]="transaction.category" style="width: 35px; height: 35px;"/>
+            <div class="d-flex align-items-center justify-content-between flex-grow-1" style="font-size: 13px">
+                <ng-container
+                    [ngTemplateOutlet]="viewTemplate ?? defaultView"
+                    [ngTemplateOutletContext]="{ transaction: transaction }"
+                ></ng-container>
+            </div>
+        </div>
+    </ion-item>
+</ion-list>
+
+<ng-template #defaultView let-transaction="transaction">
+    <div class="d-flex flex-column ms-3">
+        <ion-text class="fw-bold">{{ transaction.category }}</ion-text>
+        <ion-text>{{ transaction.amount | currencyFmt }}</ion-text>
+    </div>
+    <ion-text color="danger">{{ transaction.amountRate }}%</ion-text>
+</ng-template>

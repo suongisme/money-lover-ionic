@@ -1,52 +1,9 @@
-<ion-content>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="10">
-        <div class="d-flex">
-          <span>1,075,972 <u>đ</u></span>
-          <ion-icon name="eye"></ion-icon>
-        </div>
-      </ion-col>
-      <ion-col size="2">
-        <ion-icon name="notifications"></ion-icon>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <span>Tong so du <ion-icon name="help-circle"></ion-icon></span>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <ion-card style="margin: 0">
-          <ion-card-content>
-            <div>
-                <span>Vi cua toi</span>
-                <a>xem tat ca</a>
-            </div>
-            <div>
-                <span>Ca nhan</span>
-                <span>1,075,972 dd</span>
-            </div>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-        <ion-col>
-            <span>Bao cao thang nay</span>
-        </ion-col>
-        <ion-col>
-            <span>Xem bao cao</span>
-        </ion-col>
-    </ion-row>
-
-    <ion-row>
-        <ion-col>
-            
-        </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content class="ion-padding">
+  	<div class="d-flex flex-column gap-3">
+		<summary-balance></summary-balance>
+  		<summary-wallet></summary-wallet>
+		<summary-report></summary-report>
+		<summary-spending></summary-spending>
+		<summary-transaction></summary-transaction>
+	</div>
 </ion-content>
